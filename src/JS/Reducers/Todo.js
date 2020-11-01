@@ -15,7 +15,7 @@ const initialState = {
   ],
 };
 
-const counter = (state = initialState, action) => {
+export const todoApp = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TASK:
       return { ...state, todo: [...state.todo, action.payload] };
@@ -44,5 +44,3 @@ const counter = (state = initialState, action) => {
       return state;
   }
 };
-
-export default counter;

@@ -1,3 +1,3 @@
 import { combineReducers } from "redux";
-import Counter from "./Todo";
-export default combineReducers({ Counter });
+import { todoApp } from "./Todo";
+export default combineReducers({ todo: todoApp });
