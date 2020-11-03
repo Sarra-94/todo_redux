@@ -5,7 +5,8 @@ import { deleteItem, checkItem } from "../../JS/Actions/Action";
 import { Button } from "reactstrap";
 import Edit from "../Edit/Edit";
 function ListTodo() {
-  const Items = useSelector((state) => state.todo);
+  const Items = useSelector((state) => state.todo.todo);
+  console.log(Items);
   const [all, setAll] = useState(true);
   const dispatch = useDispatch();
 
